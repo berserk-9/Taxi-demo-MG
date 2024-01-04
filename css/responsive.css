@@ -4,11 +4,18 @@
   .drop-media {
     display: none;
   }
-
+.controls-container{
+  display: none;
+}
+.control{
+  padding: 0;
+  margin: 0;
+}
   .slider-container {
     height: 670px;
-   
+  
   }
+  
 
   .slide {
     height: 670px;
@@ -164,7 +171,10 @@
     align-items: center;
     width: 100%;
   }
-
+.taxi-logo1{
+ padding: 0;
+ margin: 0;
+}
   .down-con>img {
     display: flex;
     flex-direction: column;
@@ -244,7 +254,9 @@
     font-size: 14px;
     color: #000000d8;
   }
-
+  .get-input>input{
+     color: #7e7d7d;
+  }
   .footer {
     width: 100%;
   }
