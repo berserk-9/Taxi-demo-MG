@@ -2,18 +2,37 @@ document.addEventListener("DOMContentLoaded", function() {
     // Get the current date and time
     var now = new Date();
   
-    // Format the date as "YYYY-MM-DD"
     var formattedDate = now.toISOString().slice(0, 10);
   
-    // Format the time as "HH:mm"
     var hours = now.getHours().toString().padStart(2, '0');
     var minutes = now.getMinutes().toString().padStart(2, '0');
     var formattedTime = hours + ":" + minutes;
   
-    // Concatenate date and time in the correct format for datetime-local input
+   
     var formattedDateTime = formattedDate + "T" + formattedTime;
   
-    // Set the default value of the input field
+    
     document.getElementById("dateInput").value = formattedDateTime;
   });
   
+
+  // top
+// button on top
+let mybutton = document.getElementById("myBtn");
+
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}

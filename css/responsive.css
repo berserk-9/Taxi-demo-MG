@@ -228,7 +228,9 @@
     margin-top: 20px;
     align-items: center;
   }
-
+   .partner-img>h4>img{
+       width: 70px;
+   }
   .footer-col {
     display: flex;
     flex-direction: column;
@@ -268,3 +270,4 @@
 
   }
 }
+
